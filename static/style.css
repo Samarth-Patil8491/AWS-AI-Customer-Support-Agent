@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:900px;
+    height:90vh;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,0.3);
+    display:flex;
+    flex-direction:column;
+}
+
+.header{
+    background:#08122f;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:35px;
+    font-weight:bold;
+}
+
+.header p{
+    font-size:18px;
+    margin-top:8px;
+    color:#cbd5e1;
+}
+
+#chat-box{
+    flex:1;
+    padding:20px;
+    overflow-y:auto;
+    background:#f8fafc;
+}
+
+.user-message{
+    background:#2563eb;
+    color:white;
+    padding:15px;
+    border-radius:20px 20px 5px 20px;
+    max-width:70%;
+    margin-left:auto;
+    margin-bottom:15px;
+    word-wrap:break-word;
+}
+
+.bot-message{
+    background:#e2e8f0;
+    color:black;
+    padding:15px;
+    border-radius:20px 20px 20px 5px;
+    max-width:70%;
+    margin-bottom:15px;
+    word-wrap:break-word;
+}
+
+.input-area{
+    display:flex;
+    padding:20px;
+    gap:15px;
+    background:white;
+    border-top:1px solid #ddd;
+}
+
+.input-area input{
+    flex:1;
+    padding:15px;
+    font-size:16px;
+    border:2px solid #ddd;
+    border-radius:30px;
+    outline:none;
+}
+
+.input-area input:focus{
+    border-color:#2563eb;
+}
+
+.input-area button{
+    padding:15px 30px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.input-area button:hover{
+    background:#1d4ed8;
+}
